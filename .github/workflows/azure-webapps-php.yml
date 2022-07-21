@@ -22,13 +22,13 @@ name: Build and deploy PHP app to Azure Web App
 on:
   push:
     branches:
-      - "users/fiqriismail/step1"
+      - 'users/fiqriismail/step2'
   workflow_dispatch:
 
 env:
-  AZURE_WEBAPP_NAME: askfiqri    # set this to your application's name
-  AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
-  PHP_VERSION: '7.4'                  # set this to the PHP version to use
+  AZURE_WEBAPP_NAME: askfiqri # set this to your application's name
+  AZURE_WEBAPP_PACKAGE_PATH: '.' # set this to the path to your web app project, defaults to the repository root
+  PHP_VERSION: '7.4' # set this to the PHP version to use
 
 permissions:
   contents: read
